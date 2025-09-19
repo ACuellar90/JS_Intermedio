@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultados"></div>
+
+    <script>
+        let notas = Number(prompt("Ingresa tu nota"));
+
+        if (notas >= 6) {
+            document.getElementById("resultados").innerHTML = "Felicidades, aprobaste";
+        } else {
+            document.getElementById("resultados").innerHTML = "Eres una verguenza para tu familia, reprobaste";
+        }
+    </script>
+</body>
+</html>
