@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semana 1 - Condicionales</title>
+    <title>Document</title>
 </head>
 <body>
     <div id="resultado"></div>
@@ -12,22 +12,15 @@
         // Pedimos la edad con prompt (el usuario ingresa un número)
         let edad = Number(prompt("¿Cuántos años tienes?"));
 
-        // ejemplo con if - else
-        if (edad >= 18) {
-            document.getElementById("resultado").innerHTML = "Eres mayor de edad";
-        } else {
-            document.getElementById("resultado").innerHTML = "Eres menor de edad";
-        }
-
         // ejemplo con else if
         if (edad < 12) {
-            console.log("Eres un niño");
+            document.getElementById("resultado").innerHTML = "Eres un niño";
         } else if (edad < 18) {
-            console.log("Eres un adolescente");
+            document.getElementById("resultado").innerHTML = "Eres un adolescente";
         } else if (edad < 60) {
-            console.log("Eres un adulto");
+            document.getElementById("resultado").innerHTML = "Eres un adulto";
         } else {
-            console.log("Eres un adulto mayor");
+            document.getElementById("resultado").innerHTML = "Eres de la tercera edad";
         }
     </script>
 </body>
